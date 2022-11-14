@@ -1,25 +1,21 @@
 
 package br.com.projetoredatec.model;
 
+import java.sql.Date;
+
 public class Redacao {
 
     private Integer idRedacao;
     private String descRedacao;
-    private String dataentregaRedacao;
-    private Turma idTurma;
+    private Date dataentregaRedacao;
 
     public Redacao() {
     }
 
-    public Redacao(Integer idRedacao, String descRedacao, String dataentregaRedacao, Turma idTurma) {
+    public Redacao(Integer idRedacao, String descRedacao, Date dataentregaRedacao) {
         this.idRedacao = idRedacao;
         this.descRedacao = descRedacao;
         this.dataentregaRedacao = dataentregaRedacao;
-        this.idTurma = idTurma;
-    }
-
-    public Redacao(Turma idTurma) {
-        this.idTurma = idTurma;
     }
 
     public Integer getIdRedacao() {
@@ -38,22 +34,17 @@ public class Redacao {
         this.descRedacao = descRedacao;
     }
 
-    public String getDataentregaRedacao() {
+    public Date getDataentregaRedacao() {
         return dataentregaRedacao;
     }
 
-    public void setDataentregaRedacao(String dataentregaRedacao) {
+    public void setDataentregaRedacao(Date dataentregaRedacao) {
         this.dataentregaRedacao = dataentregaRedacao;
     }
 
-    public Turma getIdTurma() {
-        return idTurma;
-    }
 
-    public void setIdTurma(Turma idTurma) {
-        this.idTurma = idTurma;
-    }
-
+        
+    
     
     
     

@@ -20,6 +20,9 @@ public class Usuario {
         this.loginUsuario = loginUsuario;
         this.senhaUsuario = senhaUsuario;
     }
+    
+    
+    
 
     public int getIdUsuario() {
         return idUsuario;
@@ -68,7 +71,4 @@ public class Usuario {
     public void setSenhaUsuario(String senhaUsuario) {
         this.senhaUsuario = senhaUsuario;
     }
-
-    
-    
 }

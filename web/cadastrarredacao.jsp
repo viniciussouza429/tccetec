@@ -12,7 +12,7 @@
         
         <h1 align="center">Etec de Fernandópolis</h1>
         <hr>
-        <form name="cadastrarprofessor" action="CadastrarProfessor" method="POST">
+        <form name="cadastrarredacao" action="CadastrarRedacao" method="POST">
             <table align="center" border="0">
                 <tr>
                     <th colspan="2" align="center">Cadastro de Redações</th>
@@ -23,13 +23,13 @@
                 </tr>
                 
                 <tr>
-                    <td><label for="nomeUsuario" >Descrição da redação:</label></td>
-                    <td><input type="text" name="nomeMencao" ></td>
+                    <td><label for="descRedacao" >Descrição da redação:</label></td>
+                    <td><input type="text" name="descRedacao" ></td>
                 </tr>
                      
                 <tr>
-                    <td><label for="emailUsuario" >Data de entrega da redação:</label></td>
-                    <td><input type="text" name="descMencao"></td>
+                    <td><label for="dataentregaRedacao" >Data de entrega da redação:</label></td>
+                    <td><input type="date" name="dataentregaRedacao"></td>
                 </tr>
                 
                

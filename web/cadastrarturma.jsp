@@ -15,7 +15,7 @@
         <form name="cadastrarturma" action="CadastrarTurma" method="POST">
             <table align="center" border="0">
                 <tr>
-                    <th colspan="2" align="center">Cadastro de Redações</th>
+                    <th colspan="2" align="center">Cadastro de turma</th>
                 </tr>
                 
                 <tr>
@@ -23,7 +23,7 @@
                 </tr>
                 
                 <tr>
-                    <td><label for="nomeUsuario" >Nome da turma:</label></td>
+                    <td><label for="nomeTurma" >Nome da turma:</label></td>
                     <td><input type="text" name="nomeTurma" ></td>
                 </tr>
                      

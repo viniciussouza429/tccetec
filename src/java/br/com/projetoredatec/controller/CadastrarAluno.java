@@ -1,4 +1,3 @@
-
 package br.com.projetoredatec.controller;
 
 import br.com.projetoredatec.dao.AlunoDAOImpl;
@@ -34,7 +33,7 @@ public class CadastrarAluno extends HttpServlet {
             String emailUsuario = request.getParameter("emailUsuario");
             String telefoneUsuario = request.getParameter("telefoneUsuario");
             String raAluno = request.getParameter("raAluno");
-            String loginUsuario = request.getParameter("loginUsuario");
+            String loginUsuario = request.getParameter("logarUsuario");
             String senhaUsuario = request.getParameter("senhaUsuario");
 
             String mensagem = null;

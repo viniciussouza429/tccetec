@@ -2,9 +2,12 @@
 package br.com.projetoredatec.controller;
 
 import br.com.projetoredatec.dao.GenericDAO;
+import br.com.projetoredatec.dao.RedacaoDAOImpl;
 import br.com.projetoredatec.model.Redacao;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,26 +21,26 @@ public class CadastrarRedacao extends HttpServlet {
             throws ServletException, IOException {
             
             String descRedacao = request.getParameter("descRedacao");
-            String dataentregaRedacao = request.getParameter("dataentregaRedacao");
+            //Date dataentregaRedacao = request.    COLOCAR DATE
 
             String mensagem = null;
 
             Redacao redacao = new Redacao();
             redacao.setDescRedacao(descRedacao);
-            redacao.setDataentregaRedacao(dataentregaRedacao);
+          //  redacao.setDataentregaRedacao(dataentregaRedacao);
             
             try {
                 GenericDAO dao = new RedacaoDAOImpl();
-                if (dao.cadastrar(mencao)) {
-                    mensagem = "Menção cadastrada com sucesso!";
+                if (dao.cadastrar(redacao)) {
+                    mensagem = "Redação cadastrada com sucesso!";
                 } else {
-                    mensagem = "Problemas ao cadastrar menção. "
+                    mensagem = "Problemas ao cadastrar redação. "
                             + "Verifique os dados informados e tente novamente!";
                 }
                 request.setAttribute("mensagem", mensagem);
-                request.getRequestDispatcher("cadastrarmencao.jsp").forward(request, response);
+                request.getRequestDispatcher("cadastrarredacao.jsp").forward(request, response);
             } catch (Exception ex) {
-                System.out.println("Problemas no Servlet ao cadastrar menção! Erro: " + ex.getMessage());
+                System.out.println("Problemas no Servlet ao cadastrar redação! Erro: " + ex.getMessage());
                 ex.printStackTrace();
             }
         }

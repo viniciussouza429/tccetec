@@ -25,14 +25,14 @@ public class CadastrarTurma extends HttpServlet {
         try ( PrintWriter out = response.getWriter()) {
            
             String nomeTurma = request.getParameter("nomeTurma");
-            Integer idProfessor = Integer.parseInt(request.getParameter("idProfessor")); 
             
 
             String mensagem = null;
 
             Turma turma = new Turma();
             turma.setNomeTurma(nomeTurma);
-            turma.setIdProfessor(new Professor(idProfessor));
+            
+            
             try {
                 GenericDAO dao = new TurmaDAOImpl();
                 if (dao.cadastrar(turma)) {

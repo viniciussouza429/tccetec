@@ -66,7 +66,7 @@ public class AlunoDAOImpl implements GenericDAO {
                 aluno.setIdUsuario(rs.getInt("idusuario"));
                 aluno.setNomeUsuario(rs.getString ("nomeusuario"));
                 aluno.setEmailUsuario(rs.getString ("emailusuario"));
-                aluno.setTelefoneUsuario(rs.getString ("telefoneususario"));
+                aluno.setTelefoneUsuario(rs.getString ("telefoneusuario"));
                 aluno.setRaAluno(rs.getString ("raaluno"));
                 aluno.setLoginUsuario(rs.getString("loginusuario"));
                 aluno.setSenhaUsuario(rs.getString("senhausuario"));

@@ -27,12 +27,11 @@ public class RedacaoDAOImpl implements GenericDAO {
 
         Redacao redacao = (Redacao) object;
         PreparedStatement stmt = null;
-        String sql = "Insert into mencao(descredacao, dataentregaredacao, idredacao) values ( ?, ?, ?);"; //revisar
+        String sql = "Insert into redacao(descredacao, dataentregaredacao) values ( ?, ?);"; //revisar
         try {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, redacao.getDescRedacao());
             stmt.setString(2, redacao.getDataentregaRedacao());
-            stmt.setInt(3, new RedacaoDAOImpl().cadastrar(redacao));
             stmt.execute();
             return true;
         } catch (Exception ex) {

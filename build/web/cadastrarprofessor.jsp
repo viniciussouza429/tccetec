@@ -42,23 +42,23 @@
                     <div classs="text-center"> ${mensagem} </div>
                 
             <div class="form-outline mb-4">
-              <input type="text" id="typeTextX-2" for="nomeUsuario" class="form-control form-control-lg" />
+              <input type="text" id="typeTextX-2" name="nomeUsuario" for="nomeUsuario" class="form-control form-control-lg" />
               <label class="form-label" for="typeTextX-2">Nome</label>
             </div>
             
               <div class="form-outline mb-4">
-              <input type="email" id="typeEmailX-2" for="emailUsuario" class="form-control form-control-lg" />
+              <input type="email" id="typeEmailX-2" name="emailUsuario" for="emailUsuario" class="form-control form-control-lg" />
               <label class="form-label" for="typeEmailX-2">Email</label>
             </div>
                 
                 
              <div class="form-outline mb-4">
-              <input type="text" id="typeTextX-2" for="telefoneUsuario" class="form-control form-control-lg" />
+              <input type="text" id="typeTextX-2" name="telefoneUsuario" for="telefoneUsuario" class="form-control form-control-lg" />
               <label class="form-label" for="typeTextX-2">Telefone</label>
             </div>
                 
                  <div class="form-outline mb-4">
-              <input type="text" id="typeTextX-2" name="raAluno" class="form-control form-control-lg" />
+              <input type="text" id="typeTextX-2" name="rmProfessor" for="rmProfessor" class="form-control form-control-lg" />
               <label class="form-label" for="typeTextX-2">Rm do professor</label>
             </div>
             

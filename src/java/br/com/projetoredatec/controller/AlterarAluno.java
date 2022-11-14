@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author Aluno
  */
 @WebServlet(name = "AlterarAluno", urlPatterns = {"/AlterarAluno"})
-public class AlterarAluno extends HttpServlet { 
+public class AlterarAluno extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

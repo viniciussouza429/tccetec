@@ -13,12 +13,6 @@ public class Aluno extends Usuario{
         this.raAluno = raAluno;
     }
 
-    public Aluno(Integer idAluno, String raAluno, int idUsuario, String nomeUsuario, String emailUsuario, String telefoneUsuario, String loginUsuario, String senhaUsuario) {
-        super(idUsuario, nomeUsuario, emailUsuario, telefoneUsuario, loginUsuario, senhaUsuario);
-        this.idAluno = idAluno;
-        this.raAluno = raAluno;
-    }
-
     public Integer getIdAluno() {
         return idAluno;
     }

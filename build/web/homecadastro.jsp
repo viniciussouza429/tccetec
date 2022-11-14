@@ -18,9 +18,9 @@
         <p align="center"><a href="cadastrarturma.jsp">Cadastrar turma do aluno</a></p>
         <p align="center"><a href="cadastrarredacao.jsp">Cadastrar redação</a></p>
         <p align="center"><a href="cadastrarmencao.jsp">Cadastrar menção do aluno</a></p>
-        <p align="center"><a href="listarprofessor.jsp">Listar professor</a></p>
-        <p align="center"><a href="listaraluno.jsp">Listar aluno</a></p>
-        <p align="center"><a href="listarturma.jsp">Listar turma do aluno</a></p>
+        <p align="center"><a href="ListarProfessor">Listar professor</a></p>
+        <p align="center"><a href="ListarAluno">Listar aluno</a></p>
+        <p align="center"><a href="ListarTurma">Listar turma do aluno</a></p>
         <hr>
         
     </body>

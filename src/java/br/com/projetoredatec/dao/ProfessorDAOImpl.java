@@ -66,7 +66,7 @@ public class ProfessorDAOImpl implements GenericDAO {
                 professor.setIdUsuario(rs.getInt("idusuario"));
                 professor.setNomeUsuario(rs.getString ("nomeusuario"));
                 professor.setEmailUsuario(rs.getString ("emailusuario"));
-                professor.setTelefoneUsuario(rs.getString ("telefoneususario"));
+                professor.setTelefoneUsuario(rs.getString ("telefoneusuario"));
                 professor.setRmProfessor(rs.getString ("rmprofessor"));
                 professor.setLoginUsuario(rs.getString("loginusuario"));
                 professor.setSenhaUsuario(rs.getString("senhausuario"));
@@ -135,7 +135,7 @@ public class ProfessorDAOImpl implements GenericDAO {
                 professor.setSenhaUsuario(rs.getString("senhausuario"));
             }
         } catch (SQLException ex) {
-            System.out.println("Problemas ao carregar aluno! Erro: " + ex.getMessage());
+            System.out.println("Problemas ao carregar professor! Erro: " + ex.getMessage());
             ex.printStackTrace();
         } finally {
             try {

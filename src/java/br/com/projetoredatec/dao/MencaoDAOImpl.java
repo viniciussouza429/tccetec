@@ -27,12 +27,11 @@ public class MencaoDAOImpl implements GenericDAO {
 
         Mencao mencao = (Mencao) object;
         PreparedStatement stmt = null;
-        String sql = "Insert into mencao(nomemencao, descmencao, idredacao) values ( ?, ?, ?);"; //revisar
+        String sql = "Insert into mencao(nomemencao, descmencao) values ( ?, ?);"; //revisar
         try {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, mencao.getNomeMencao());
             stmt.setString(2, mencao.getDescMencao());
-            stmt.setInt(3, new MencaoDAOImpl().cadastrar(mencao));
             stmt.execute();
             return true;
         } catch (Exception ex) {

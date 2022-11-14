@@ -21,9 +21,9 @@
             <tr>
                 <th align="center">Nome</th>
                 <th align="center">Email</th>
+                  <th align="center">RM do professor </th>
                 <th align="center">Telefone</th>
                 <th align="center">Login</th>
-                <th align="center">RM do professor </th>
                 <th align="center" colspan="2">Editar</th>
             </tr>
 

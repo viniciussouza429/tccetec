@@ -20,7 +20,7 @@ public class LogarUsuario extends HttpServlet {
        
         try{
            
-            String loginUsuario = request.getParameter("loginUsuario");
+            String loginUsuario = request.getParameter("logarUsuario");
             String senhaUsuario = request.getParameter("senhaUsuario");
             String message = null;
            
@@ -33,7 +33,7 @@ public class LogarUsuario extends HttpServlet {
                         sessao.setAttribute("usuario", usuario);
                         message = "Seja bem-vindo(a) " + usuario.getNomeUsuario();
                         sessao.setAttribute("message", message);
-                        request.getRequestDispatcher("home.jsp").forward(request, response);               
+                        request.getRequestDispatcher("index.jsp").forward(request, response);               
                     }else{
                         message = "Login ou Senha inválidos!";
                         request.setAttribute("message", message);

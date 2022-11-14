@@ -27,7 +27,9 @@
     </head>
      <body>
          
-         
+              
+              
+              
            <section class="vh-100" style="background-color: #358594;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -56,36 +58,7 @@
       </div>
     </div>
   </div>
-</section>
-         
-         
-        <h1 align="center">Etec de Fernandópolis</h1>
-        <hr>
-        <form name="loginUsuario" action="LogarUsuario" method="POST">
-            <table align="center" border="0">
-                <tr>
-                    <th colspan="2" align="center">Insira os dados para fazer login</th>
-                </tr>
-                <tr>
-                    <th colspan="2" align="center">${message}</th>
-                </tr>
-                <tr>
-                    <td>Login:</td>
-                    <td><input type="text" name="loginUsuario"></td>
-                </tr>
-                <tr>
-                    <td>Senha:</td>
-                    <td><input type="password" name="senhaUsuario"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" name="entrar" value="Entrar">
-                    </td>
-                </tr>
-            </table>
-        </form>
-        <hr>
-        
+</section>       
         
         
             <!-- ======= EXPORTAÇÕEs ======= -->

@@ -6,23 +6,15 @@ public class Turma{
     
     private Integer idTurma;
     private String nomeTurma;
-    private Professor idProfessor;
     
     
     public Turma() {
     }
 
-    public Turma(Integer idTurma, String nomeTurma, Professor idProfessor) {
+    public Turma(Integer idTurma, String nomeTurma) {
         this.idTurma = idTurma;
         this.nomeTurma = nomeTurma;
-        this.idProfessor = idProfessor;
     }
-
-    public Turma(Professor idProfessor) {
-        this.idProfessor = idProfessor;
-    }
-    
-    
 
     public Integer getIdTurma() {
         return idTurma;
@@ -39,15 +31,6 @@ public class Turma{
     public void setNomeTurma(String nomeTurma) {
         this.nomeTurma = nomeTurma;
     }
-
-    public Professor getIdProfessor() {
-        return idProfessor;
-    }
-
-    public void setIdProfessor(Professor idProfessor) {
-        this.idProfessor = idProfessor;
-    }
-
 
     
     

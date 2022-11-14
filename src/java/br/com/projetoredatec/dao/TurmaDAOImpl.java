@@ -27,11 +27,10 @@ public class TurmaDAOImpl implements GenericDAO {
 
         Turma turma = (Turma) object;
         PreparedStatement stmt = null;
-        String sql = "Insert into turma(nometurma, idprofessor) values ( ?, ?);";
+        String sql = "Insert into turma(nometurma) values (?);";
         try {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, turma.getNomeTurma());
-//            stmt.setInt(2, new ProfessorDAOImpl().cadastrar(turma)); //revisar turma
             stmt.execute();
             return true;
         } catch (Exception ex) {

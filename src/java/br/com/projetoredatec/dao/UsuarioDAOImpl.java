@@ -26,13 +26,15 @@ public class UsuarioDAOImpl {
         ResultSet rs = null;
         Integer idUsuario = null;
 
-        String sql = "Insert into usuario(nomeusuario, emailusuario, telefoneusuario) values ( ?, ?, ?) returning idusuario;";
+        String sql = "Insert into usuario(nomeusuario, emailusuario, telefoneusuario, loginusuario, senhausuario) values ( ?, ?, ?, ?, ?) returning idusuario;";
 
         try {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, usuario.getNomeUsuario());
             stmt.setString(2, usuario.getEmailUsuario());
             stmt.setString(3, usuario.getTelefoneUsuario());
+            stmt.setString(4, usuario.getLoginUsuario());
+            stmt.setString(5, usuario.getSenhaUsuario());
             rs = stmt.executeQuery();
 
             if (rs.next()) {
@@ -53,6 +55,7 @@ public class UsuarioDAOImpl {
 
             return idUsuario; 
         }
+        
     }
     
     
@@ -95,9 +98,9 @@ public class UsuarioDAOImpl {
             rs = stmt.executeQuery();
             while (rs.next()) {
                 usuario = new Usuario();
-                usuario.setLoginUsuario(rs.getString("loginusuario"));
-                usuario.setSenhaUsuario(rs.getString("senhausuario"));
-                usuario.setNomeUsuario(rs.getString("nomeusuario"));
+                usuario.setLoginUsuario(rs.getString("logarUsuario"));
+                usuario.setSenhaUsuario(rs.getString("senhaUsuario"));
+                usuario.setNomeUsuario(rs.getString("nomeUsuario"));
             }
         } catch (SQLException ex) {
             System.out.println("Problemas ao encontrar usuario. ERRO : " + ex.getMessage());
